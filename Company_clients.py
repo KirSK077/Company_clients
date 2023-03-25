@@ -154,7 +154,7 @@ def find_client(conn, first_name=None, last_name=None, email=None, phone_number=
             print(*cur.fetchall())
 
 
-password = 'mynWck2ssG'
+password = ''
 with psycopg2.connect(database="Company_clients", user="postgres", password=password) as conn:
     # print(drope_db(conn))
     print(create_db(conn))
